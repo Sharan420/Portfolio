@@ -5,7 +5,7 @@ const Navbar = () => {
         Resume
       </button>
       <div className="space-x-8 font-inconsolata text-white text-2xl">
-        <a href="#">01.About</a>
+        <a href="#about">01.About</a>
         <a href="#">02.Work</a>
         <a href="#">03.Contact</a>
       </div>

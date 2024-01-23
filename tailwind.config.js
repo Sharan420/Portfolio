@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         inconsolata: ['Inconsolata', 'monospace'],
+        climate: ['Bebas Neue', 'sans-serif'],
       },
     },
   },
