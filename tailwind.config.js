@@ -5,9 +5,16 @@ export default {
     extend: {
       fontFamily: {
         inconsolata: ['Inconsolata', 'monospace'],
-        climate: ['Bebas Neue', 'sans-serif'],
+        bebas: ['Bebas Neue', 'sans-serif'],
+      },
+      colors: {
+        primary: '#00241b',
+        secondary: '#174305',
+        highlights: '#f0ed66',
+        slightoffwhite: '#F8FEF5',
       },
     },
   },
+  // eslint-disable-next-line no-undef
   plugins: [require('tailwind-scrollbar')],
 }
