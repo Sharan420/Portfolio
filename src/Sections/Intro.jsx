@@ -36,7 +36,7 @@ const Intro = () => {
               : 'flex flex-col justify-center items-center h-full w-full opacity-0 -my-10'
           }
         >
-          <span className="text-[#F8FEF5] text-[25px] font-inconsolat font-normal leading-tight">
+          <span className="text-slightoffwhite text-2xl font-inconsolata font-normal leading-tight">
             Hello there
           </span>
           <span className="text-[#F8FEF5] text-[100px] font-inconsolata font-bold leading-[90px]">
@@ -46,7 +46,7 @@ const Intro = () => {
             <span>{text}</span>
             <Cursor cursorStyle="_" cursorBlinking />
           </span>
-          <p className="text-[#F8FEF5] font-inconsolata text-2xl font-normal text-center leading-tight">
+          <p className="text-slightoffwhite font-inconsolata text-2xl font-normal text-center leading-tight">
             Engineer with a passion for deconstruction, web experience curation,
             <br />
             and occasional design involvement.
@@ -71,7 +71,7 @@ const Intro = () => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M0 0L48 24.1667C96 48.3333 192 96.6667 288 101.5C384 106.333 480 67.6667 576 62.8333C672 58 768 87 864 101.5C960 116 1056 116 1152 101.5C1248 87 1344 58 1392 43.5L1440 29V203H1392C1344 203 1248 203 1152 203C1056 203 960 203 864 203C768 203 672 203 576 203C480 203 384 203 288 203C192 203 96 203 48 203H0V0Z"
-            fill="#058C42"
+            fill="#147a42"
           />
         </svg>
       </section>

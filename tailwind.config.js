@@ -5,13 +5,14 @@ export default {
     extend: {
       fontFamily: {
         inconsolata: ['Inconsolata', 'monospace'],
-        bebas: ['Bebas Neue', 'sans-serif'],
+        climate: ['Bebas Neue', 'sans-serif'],
       },
       colors: {
-        primary: '#058c42',
-        secondary: '#174305',
-        highlights: '#f0ed66',
-        slightoffwhite: '#F8FEF5',
+        background: '#0D2718',
+        primary: '#8BEAB3',
+        secondary: '#147a42',
+        highlights: '#1AF877',
+        slightoffwhite: '#C5D0C9',
       },
     },
   },
