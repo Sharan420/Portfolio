@@ -19,7 +19,9 @@ const Loader = () => {
         type="video/mp4"
         autoPlay
         muted
-        className={videoEnded ? 'hidden' : 'w-screen object-cover'}
+        className={
+          videoEnded ? 'hidden' : 'h-screen w-screen object-cover aspect-video'
+        }
         onEnded={() => {
           setVideoEnded(true)
         }}
@@ -31,7 +33,9 @@ const Loader = () => {
         autoPlay
         muted
         loop
-        className={videoEnded ? 'w-screen object-cover' : 'hidden'}
+        className={
+          videoEnded ? 'h-screen w-screen object-cover aspect-video' : 'hidden'
+        }
       />
     </div>
   )
