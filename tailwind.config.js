@@ -8,7 +8,7 @@ export default {
         bebas: ['Bebas Neue', 'sans-serif'],
       },
       colors: {
-        primary: '#00241b',
+        primary: '#058c42',
         secondary: '#174305',
         highlights: '#f0ed66',
         slightoffwhite: '#F8FEF5',

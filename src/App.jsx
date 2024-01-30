@@ -4,8 +4,11 @@ import { Navbar, Loader } from './Components'
 
 function App() {
   return (
-    <div>
+    <div className="absolute w-full">
+      <Navbar />
+      <Intro />
       <Loader />
+      <About />
     </div>
   )
 }

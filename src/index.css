@@ -13,6 +13,7 @@ body {
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* border: red solid 1px; */
 }
 
 .loader-wrapper {
