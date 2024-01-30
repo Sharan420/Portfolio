@@ -55,25 +55,25 @@ const Intro = () => {
             Resume
           </button>
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1440"
-          height="203"
-          viewBox="0 0 1440 203"
-          fill="none"
+        <div
           className={
             showWave
-              ? 'absolute -bottom-10 left-0 overflow-hidden w-full scale-x-110 z-10 duration-[500ms] ease-in-out'
-              : 'absolute -bottom-[203px] left-0 overflow-hidden w-full scale-x-110 z-10'
+              ? 'custom-shape-divider-bottom-1706648784'
+              : 'absolute -bottom-[180px] left-0 w-full overflow-hidden leading-7'
           }
         >
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M0 0L48 24.1667C96 48.3333 192 96.6667 288 101.5C384 106.333 480 67.6667 576 62.8333C672 58 768 87 864 101.5C960 116 1056 116 1152 101.5C1248 87 1344 58 1392 43.5L1440 29V203H1392C1344 203 1248 203 1152 203C1056 203 960 203 864 203C768 203 672 203 576 203C480 203 384 203 288 203C192 203 96 203 48 203H0V0Z"
-            fill="#147a42"
-          />
-        </svg>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              className="shape-fill"
+            ></path>
+          </svg>
+        </div>
       </section>
     </>
   )

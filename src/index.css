@@ -52,3 +52,44 @@ body {
     stroke-width: 0.4px;
   }
 }
+
+.waveshape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waveshape svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 102px;
+}
+
+.waveshape .shape-fill {
+  fill: #147a42;
+}
+
+.custom-shape-divider-bottom-1706648784 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.custom-shape-divider-bottom-1706648784 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 93px;
+}
+
+.custom-shape-divider-bottom-1706648784 .shape-fill {
+  fill: #147a42;
+}

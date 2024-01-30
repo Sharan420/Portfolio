@@ -1,14 +1,14 @@
 import { SocialIcon } from 'react-social-icons'
-
+import myImage from '../Assets/myImage.jpeg'
 const About = () => {
   return (
     <>
-      <section id="about" className="relative z-10 py-10 bg-secondary">
+      <section id="about" className="relative z-10 py-10 bg-secondary min-h-96">
         <div className="flex flex-row justify-center items-start gap-10 ">
           <img
-            src="http://placekitten.com/350/450"
+            src={myImage}
             alt="myImage"
-            className="rounded-xl w-[350px] h-[450px]"
+            className="rounded-xl w-[400px] h-[400px]"
           />
           <div className="flex flex-col w-[50%] pt-6">
             <h1 className="text-[4rem] text-[#ffff] font-inconsolata font-black tracking-tight">
@@ -18,8 +18,8 @@ const About = () => {
               A BTech student and passionate web developer. My project portfolio
               includes impactful solutions like the Traffic Regulator and Water
               Purity Finder. Proficient in Python, JavaScript, and MySQL, I
-              thrive on crafting dynamic and efficient web applications. Let's
-              innovate together!
+              thrive on crafting dynamic and efficient web applications.
+              Let&apos;s innovate together!
             </p>
             <div className="flex flex-row gap-4 pt-6">
               <SocialIcon

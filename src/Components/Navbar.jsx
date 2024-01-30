@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav
       className={
         showNav
-          ? 'z-20 absolute pr-11 py-6 flex justify-end items-center w-full duration-[500ms] ease-out'
+          ? 'z-20 absolute pr-11 py-6 flex justify-end items-center w-full duration-[500ms] ease-in-out'
           : 'z-20 absolute pr-11 py-6 flex justify-end items-center w-full -translate-y-24'
       }
     >

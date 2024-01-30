@@ -9,7 +9,6 @@ const Loader = () => {
 
   const handleTimeUpdate = e => {
     setCurrentTime(e.target.currentTime)
-    console.log(currentTime)
   }
 
   return (

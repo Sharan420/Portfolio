@@ -8,7 +8,7 @@ export default {
         climate: ['Bebas Neue', 'sans-serif'],
       },
       colors: {
-        background: '#0D2718',
+        background: '#0A1B10',
         primary: '#8BEAB3',
         secondary: '#147a42',
         highlights: '#1AF877',
