@@ -115,7 +115,7 @@ const Skills = () => {
           </span>
           <div className="w-[2px] h-[30vh] border-l-2 border-slightoffwhite"></div>
           <div className="flex flex-row items-center justify-center gap-10">
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl px-8">
+            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl px-4">
               <SiTensorflow className="text-[6rem]" />
               <p className="text-lg">Tensorflow</p>
             </span>
@@ -131,7 +131,7 @@ const Skills = () => {
               <FaPython className="text-[6rem]" />
               <p className="text-lg">Python</p>
             </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
+            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl px-4">
               <SiKeras className="text-[6rem]" />
               <p className="text-lg">Keras</p>
             </span>
