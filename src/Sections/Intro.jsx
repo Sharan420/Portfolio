@@ -36,19 +36,18 @@ const Intro = () => {
               : 'flex flex-col justify-center items-center h-full w-full opacity-0 -my-10'
           }
         >
-          <span className="text-slightoffwhite text-2xl font-inconsolata font-normal leading-tight">
+          <span className="text-slightoffwhite text-xl md:text-2xl font-inconsolata font-normal leading-tight">
             Hello there
           </span>
-          <span className="text-[#F8FEF5] text-[100px] font-inconsolata font-bold leading-[90px]">
+          <span className="text-[50px] text-center text-[#F8FEF5] md:text-[100px] font-inconsolata font-bold leading-[70px] md:leading-[90px]">
             I&apos;m Sharan Suri
           </span>
-          <span className="mix-blend-color-dodge text-[#00ffff]/[0.5] text-[90px] font-inconsolata font-black leading-tight">
+          <span className="text-[#00ffff]/[0.5] text-[45px] md:text-[90px] font-inconsolata font-black leading-tight">
             <span>{text}</span>
             <Cursor cursorStyle="_" cursorBlinking />
           </span>
-          <p className="text-slightoffwhite font-inconsolata text-2xl font-normal text-center leading-tight">
+          <p className="text-slightoffwhite font-inconsolata text-xl px-4 md:px-[21rem] md:text-2xl font-normal text-center md:leading-tight">
             Engineer with a passion for deconstruction, web experience curation,
-            <br />
             and occasional design involvement.
           </p>
           <button className="px-10 py-2 rounded-2xl border-2 border-orange-50 bg-[#66BF40]/[0.15] text-white text-2xl font-inconsolata mt-8 transition duration-200 hover:bg-[#66BF40]/[0.35]">
@@ -58,7 +57,7 @@ const Intro = () => {
         <div
           className={
             showWave
-              ? 'custom-shape-divider-bottom-1706648784'
+              ? 'custom-shape-divider-bottom-1706648784 '
               : 'absolute -bottom-[180px] left-0 w-full overflow-hidden leading-7'
           }
         >

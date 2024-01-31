@@ -4,7 +4,8 @@ import { Navbar, Loader } from './Components'
 function App() {
   return (
     <div
-      className={true ? 'absolute h-full ' : 'absolute h-full overflow-hidden'}
+      // eslint-disable-next-line no-constant-condition
+      className={true ? 'absolute h-full' : 'absolute h-full overflow-hidden'}
     >
       <Navbar />
       <Intro />

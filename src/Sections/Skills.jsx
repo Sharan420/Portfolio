@@ -18,6 +18,63 @@ import {
 import { MdOutlineMonitor } from 'react-icons/md'
 import { GiArtificialIntelligence } from 'react-icons/gi'
 
+const WebDev = [
+  {
+    name: 'Javascript',
+    icon: <RiJavascriptFill className="text-[4rem] md:text-[6rem]" />,
+  },
+  {
+    name: 'HTML',
+    icon: <RiHtml5Fill className="text-[4rem] md:text-[6rem]" />,
+  },
+  { name: 'CSS', icon: <RiCss3Fill className="text-[4rem] md:text-[6rem]" /> },
+  { name: 'React', icon: <FaReact className="text-[4rem] md:text-[6rem]" /> },
+  {
+    name: 'Firebase',
+    icon: <IoLogoFirebase className="text-[4rem] md:text-[6rem]" />,
+  },
+  { name: 'Django', icon: <DiDjango className="text-[4rem] md:text-[6rem]" /> },
+  { name: 'Vite', icon: <SiVite className="text-[4rem] md:text-[6rem]" /> },
+  {
+    name: 'Tailwind Css',
+    icon: <SiTailwindcss className="text-[4rem] md:text-[6rem]" />,
+  },
+]
+
+const Design = [
+  {
+    name: 'Photoshop',
+    icon: <SiAdobephotoshop className="text-[4rem] md:text-[6rem]" />,
+  },
+  {
+    name: 'Illustrator',
+    icon: <SiAdobeillustrator className="text-[4rem] md:text-[6rem]" />,
+  },
+  {
+    name: 'Premiere',
+    icon: <SiAdobepremierepro className="text-[4rem] md:text-[6rem]" />,
+  },
+  { name: 'Figma', icon: <FaFigma className="text-[4rem] md:text-[6rem]" /> },
+  {
+    name: 'After Effects',
+    icon: <SiAdobeaftereffects className="text-[4rem] md:text-[6rem]" />,
+  },
+]
+
+const AI = [
+  {
+    name: 'Tensorflow',
+    icon: <SiTensorflow className="text-[4rem] md:text-[6rem]" />,
+  },
+  {
+    name: 'Pytorch',
+    icon: <SiPytorch className="text-[4rem] md:text-[6rem]" />,
+  },
+  { name: 'Numpy', icon: <SiNumpy className="text-[4rem] md:text-[6rem]" /> },
+  { name: 'Python', icon: <FaPython className="text-[4rem] md:text-[6rem]" /> },
+  { name: 'Keras', icon: <SiKeras className="text-[4rem] md:text-[6rem]" /> },
+]
+
 const Skills = () => {
   return (
     <section id="skills" className="relative min-h-[30vh] bg-background">
@@ -38,103 +95,67 @@ const Skills = () => {
         <h1 className="text-[4rem] text-[#ffff] font-inconsolata font-black tracking-tight">
           Skills
         </h1>
-        <div className="mx-6 my-4 min-w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-row items-center justify-center gap-10">
+        {/* WebDev */}
+        <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
           <span className="flex flex-col items-center text-slightoffwhite font-inconsolata">
             <TbWorldWww className="text-[8rem]" />
             <p className="text-lg">Web Development</p>
           </span>
-          <div className="w-[2px] h-[30vh] border-l-2 border-slightoffwhite"></div>
-          <div className="grid grid-cols-5 items-center justify-center gap-8">
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <RiJavascriptFill className="text-[6rem]" />
-              <p className="text-lg">Javascript</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <RiHtml5Fill className="text-[6rem]" />
-              <p className="text-lg">HTML</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <RiCss3Fill className="text-[6rem]" />
-              <p className="text-lg">CSS</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <FaReact className="text-[6rem]" />
-              <p className="text-lg">React</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <IoLogoFirebase className="text-[6rem]" />
-              <p className="text-lg">Firebase</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <DiDjango className="text-[6rem]" />
-              <p className="text-lg">Django</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <SiVite className="text-[6rem]" />
-              <p className="text-lg">Vite</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <SiTailwindcss className="text-[6rem]" />
-              <p className="text-lg">Tailwind Css</p>
-            </span>
+          <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8">
+            {WebDev.map((item, index) => {
+              return (
+                <span
+                  className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 transition-all duration-300 ease-in-out rounded-xl px-2 py-2"
+                  key={index}
+                >
+                  {item.icon}
+                  <p className="text-md md:text-lg">{item.name}</p>
+                </span>
+              )
+            })}
           </div>
         </div>
-        <div className="mx-6 my-4 min-w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-row items-center justify-center gap-10">
+        {/* Design */}
+        <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
           <span className="flex flex-col items-center text-slightoffwhite font-inconsolata">
             <MdOutlineMonitor className="text-[8rem]" />
             <p className="text-lg">Design</p>
           </span>
-          <div className="w-[2px] h-[30vh] border-l-2 border-slightoffwhite"></div>
-          <div className="grid grid-cols-5 items-center justify-center gap-8">
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <SiAdobephotoshop className="text-[6rem]" />
-              <p className="text-lg">Photoshop</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <SiAdobeillustrator className="text-[6rem]" />
-              <p className="text-lg">Illustrator</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <SiAdobepremierepro className="text-[6rem]" />
-              <p className="text-lg">Premiere</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <FaFigma className="text-[6rem]" />
-              <p className="text-lg">Figma</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <SiAdobeaftereffects className="text-[6rem]" />
-              <p className="text-lg">After Effects</p>
-            </span>
+          <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8">
+            {Design.map((item, index) => {
+              return (
+                <span
+                  className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 transition-all duration-300 ease-in-out rounded-xl px-2 py-2"
+                  key={index}
+                >
+                  {item.icon}
+                  <p className="text-md md:text-lg text-center">{item.name}</p>
+                </span>
+              )
+            })}
           </div>
         </div>
-        <div className="mx-6 my-4 min-w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-row items-center justify-center gap-10">
+        {/* AI */}
+        <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
           <span className="flex flex-col items-center text-slightoffwhite font-inconsolata">
             <GiArtificialIntelligence className="text-[8rem]" />
             <p className="text-lg">Artificial Int</p>
           </span>
-          <div className="w-[2px] h-[30vh] border-l-2 border-slightoffwhite"></div>
-          <div className="flex flex-row items-center justify-center gap-10">
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl px-4">
-              <SiTensorflow className="text-[6rem]" />
-              <p className="text-lg">Tensorflow</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <SiPytorch className="text-[6rem]" />
-              <p className="text-lg">Pytorch</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <SiNumpy className="text-[6rem]" />
-              <p className="text-lg">Numpy</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl">
-              <FaPython className="text-[6rem]" />
-              <p className="text-lg">Python</p>
-            </span>
-            <span className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl px-4">
-              <SiKeras className="text-[6rem]" />
-              <p className="text-lg">Keras</p>
-            </span>
+          <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-10">
+            {AI.map((item, index) => {
+              return (
+                <span
+                  className="flex flex-col items-center text-slightoffwhite font-inconsolata hover:scale-110 transition-all duration-300 ease-in-out rounded-xl px-2 py-2"
+                  key={index}
+                >
+                  {item.icon}
+                  <p className="text-lg text-center">{item.name}</p>
+                </span>
+              )
+            })}
           </div>
         </div>
       </div>
