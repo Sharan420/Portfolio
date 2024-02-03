@@ -1,6 +1,10 @@
+//Imports:
 import { SocialIcon } from 'react-social-icons'
 import myImage from '../Assets/myImage.jpeg'
+
+//Components:
 const About = () => {
+  //Return:
   return (
     <>
       <section
@@ -9,7 +13,7 @@ const About = () => {
       >
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-2 md:gap-10 ">
           <img
-            src={myImage}
+            src="http://placekitten.com/300/300"
             alt="myImage"
             className="rounded-xl w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
           />
@@ -17,16 +21,17 @@ const About = () => {
             <h1 className="text-[3.5rem] text-[#ffff] font-inconsolata font-black tracking-tight">
               About Me
             </h1>
-            <p className="text-[1rem] font-inconsolata font-normal text-slightoffwhite border-t-[3px] border-slightoffwhite py-2">
-              A BTech student and passionate web developer. My project portfolio
-              includes impactful solutions like the Traffic Regulator and Water
-              Purity Finder. Proficient in Python, JavaScript, and MySQL, I
-              thrive on crafting dynamic and efficient web applications.
-              Let&apos;s innovate together!
+            <p className="text-lg font-inconsolata font-normal text-slightoffwhite border-t-[3px] border-slightoffwhite pr-[10rem] py-2">
+              Hey there! I&apos;m Sharan Suri, a versatile web developer,
+              designer, and AI enthusiast. With a passion for creating seamless
+              digital experiences, I blend technical expertise with a keen eye
+              for design. Over the years, I&apos;ve honed my skills in HTML,
+              CSS, JavaScript, and AI technologies, crafting innovative
+              solutions that marry form and function.
             </p>
             <div className="grid grid-cols-3 gap-4 md:flex md:flex-row md:gap-4 pt-6 justify-items-center">
               <SocialIcon
-                url="https://twitter.com/Sharan_devel"
+                url="https://x.com/Sharan_devel"
                 bgColor="#C5D0C9"
                 fgColor="transparent"
               />
@@ -63,4 +68,5 @@ const About = () => {
   )
 }
 
+//Exports:
 export default About

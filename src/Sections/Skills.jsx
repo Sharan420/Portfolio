@@ -1,3 +1,4 @@
+//Imports:
 import { TbWorldWww } from 'react-icons/tb'
 import { RiJavascriptFill, RiHtml5Fill, RiCss3Fill } from 'react-icons/ri'
 import { FaReact, FaFigma, FaPython } from 'react-icons/fa6'
@@ -18,6 +19,7 @@ import {
 import { MdOutlineMonitor } from 'react-icons/md'
 import { GiArtificialIntelligence } from 'react-icons/gi'
 
+//Constants:
 const WebDev = [
   {
     name: 'Javascript',
@@ -72,10 +74,15 @@ const AI = [
   },
   { name: 'Numpy', icon: <SiNumpy className="text-[4rem] md:text-[6rem]" /> },
   { name: 'Python', icon: <FaPython className="text-[4rem] md:text-[6rem]" /> },
-  { name: 'Keras', icon: <SiKeras className="text-[4rem] md:text-[6rem]" /> },
+  {
+    name: 'Keras',
+    icon: <SiKeras className="text-[4rem] md:text-[6rem] leading-loose" />,
+  },
 ]
 
+//Components:
 const Skills = () => {
+  //Return:
   return (
     <section id="skills" className="relative min-h-[30vh] bg-background">
       <div className="waveshape">
@@ -91,18 +98,18 @@ const Skills = () => {
           ></path>
         </svg>
       </div>
-      <div className="flex flex-col justify-center items-center h-full w-full py-10">
+      <div className="flex flex-col justify-center items-center h-full w-full py-20">
         <h1 className="text-[4rem] text-[#ffff] font-inconsolata font-black tracking-tight">
           Skills
         </h1>
         {/* WebDev */}
         <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
-          <span className="flex flex-col items-center text-slightoffwhite font-inconsolata">
+          <span className="flex flex-col items-center text-slightoffwhite font-inconsolata w-1/5">
             <TbWorldWww className="text-[8rem]" />
             <p className="text-lg">Web Development</p>
           </span>
           <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
-          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8">
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8 w-4/5">
             {WebDev.map((item, index) => {
               return (
                 <span
@@ -118,12 +125,12 @@ const Skills = () => {
         </div>
         {/* Design */}
         <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
-          <span className="flex flex-col items-center text-slightoffwhite font-inconsolata">
-            <MdOutlineMonitor className="text-[8rem]" />
+          <span className="flex flex-col items-center text-slightoffwhite font-inconsolata w-1/5">
+            <MdOutlineMonitor className="text-[8rem] leading-loose" />
             <p className="text-lg">Design</p>
           </span>
           <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
-          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8">
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8 w-4/5">
             {Design.map((item, index) => {
               return (
                 <span
@@ -139,12 +146,12 @@ const Skills = () => {
         </div>
         {/* AI */}
         <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
-          <span className="flex flex-col items-center text-slightoffwhite font-inconsolata">
-            <GiArtificialIntelligence className="text-[8rem]" />
+          <span className="flex flex-col items-center text-slightoffwhite font-inconsolata w-1/5">
+            <GiArtificialIntelligence className="text-[8rem] leading-loose" />
             <p className="text-lg">Artificial Int</p>
           </span>
           <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
-          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-10">
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-10 w-4/5">
             {AI.map((item, index) => {
               return (
                 <span
@@ -163,4 +170,5 @@ const Skills = () => {
   )
 }
 
+//Exports:
 export default Skills

@@ -1,7 +1,11 @@
+//Imports:
 import './App.css'
 import { Intro, About, Skills } from './Sections/'
 import { Navbar, Loader } from './Components'
+
+//Components:
 function App() {
+  //Return:
   return (
     <div
       // eslint-disable-next-line no-constant-condition
@@ -16,4 +20,5 @@ function App() {
   )
 }
 
+//Exports:
 export default App

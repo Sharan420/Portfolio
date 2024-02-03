@@ -1,8 +1,11 @@
+//Imports:
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { useEffect, useState } from 'react'
 import { useVideoContext } from '../Contexts/VideoContext'
 
+//Components:
 const Intro = () => {
+  //Constants:
   const words = ['Web Developer', 'Student', 'Designer', 'Artist', 'Jedi']
   const [text] = useTypewriter({
     words: words,
@@ -11,9 +14,15 @@ const Intro = () => {
     typeSpeed: 150,
     deleteSpeed: 80,
   })
+
+  //Context:
   const { currentTime } = useVideoContext()
+
+  //State:
   const [showWave, setShowWave] = useState(false)
   const [showText, setShowText] = useState(false)
+
+  //Effects:
   useEffect(() => {
     if (currentTime >= 4 && !showWave) {
       setShowWave(true)
@@ -26,6 +35,8 @@ const Intro = () => {
       return
     }
   }, [currentTime, showWave, showText])
+
+  //Return:
   return (
     <>
       <section className="absolute w-full h-screen z-10 overflow-hidden">
@@ -78,4 +89,5 @@ const Intro = () => {
   )
 }
 
+//Exports:
 export default Intro

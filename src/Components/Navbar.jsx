@@ -1,11 +1,15 @@
+//Imports:
 import { useVideoContext } from '../Contexts/VideoContext'
 import { useEffect, useState } from 'react'
 import { TiThMenu } from 'react-icons/ti'
 
+//Components:
 const Navbar = () => {
+  //State:
   const { currentTime } = useVideoContext()
   const [showNav, setShowNav] = useState(false)
 
+  //Effects:
   useEffect(() => {
     if (currentTime >= 4 && !showNav) {
       setShowNav(true)
@@ -14,6 +18,7 @@ const Navbar = () => {
     }
   }, [currentTime, showNav])
 
+  //Return:
   return (
     <nav
       className={
@@ -24,7 +29,7 @@ const Navbar = () => {
     >
       <div className="hidden md:block md:space-x-8 md:font-inconsolata md:text-white md:text-2xl">
         <a href="#about">01.About</a>
-        <a href="#">02.Work</a>
+        <a href="#skills">02.Skills</a>
         <a href="#">03.Contact</a>
       </div>
       <a className="md:hidden mt-4">
@@ -34,4 +39,5 @@ const Navbar = () => {
   )
 }
 
+//Exports:
 export default Navbar
