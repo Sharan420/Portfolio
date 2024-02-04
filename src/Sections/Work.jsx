@@ -1,5 +1,8 @@
 //Imports:
 import Traffix from '../Assets/Traffix1.png'
+import TraffixLogo from '../Assets/Traffix.jpg'
+import Crypt from '../Assets/crypt.png'
+import CryptLogo from '../Assets/cryptlogo.png'
 import { SiNumpy, SiKeras, SiPython } from 'react-icons/si'
 import { SlSocialGithub } from 'react-icons/sl'
 import { IoIosLink } from 'react-icons/io'
@@ -25,12 +28,36 @@ const Projects = [
     ],
     Image: Traffix,
   },
+  {
+    name: 'Crypt@trix',
+    icon: [<SiKeras />, <SiNumpy />, <SiPython />],
+    description:
+      'Keras is used to optimize traffic light timings by real-time traffic density detection, enhancing urban transportation efficiency and reducing congestion.',
+    links: [
+      {
+        name: 'Github',
+        icon: <SlSocialGithub />,
+        link: 'https://github.com/PyrotechClub/crypt22',
+      },
+    ],
+    Image: Crypt,
+  },
 ]
 
 //Components:
 const Work = () => {
   //State:
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [transition, setTransition] = useState(false)
+
+  //Functions:
+  const handleTransistion = index => {
+    setTransition(true)
+    setTimeout(() => {
+      setCurrentIndex(index)
+      setTransition(false)
+    }, 500)
+  }
 
   //Return:
   return (
@@ -41,7 +68,13 @@ const Work = () => {
       <h1 className="font-inconsolata text-[3.5rem] text-white font-bold pb-6">
         Projects
       </h1>
-      <div className="relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3">
+      <div
+        className={
+          transition
+            ? 'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 opacity-0 transition-opacity duration-300'
+            : 'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 opacity-100 transition-opacity duration-300'
+        }
+      >
         <img
           src={Projects[currentIndex].Image}
           className="rounded-lg aspect-auto w-[38vw] col-start-1 col-span-6 row-start-1"
@@ -72,18 +105,38 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-8 w-full items-center justify-center mt-12">
+      <div className="flex flex-row gap-8 min-h-[100px] w-full items-center justify-center mt-12">
         <div
-          className="w-48 h-28 bg-secondary rounded-lg"
+          className={`w-[20%] h-[15vh] rounded-lg`}
+          style={{
+            backgroundImage: `url(${TraffixLogo})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
           onClick={() => {
-            setCurrentIndex(0)
+            handleTransistion(0)
             console.log(currentIndex)
           }}
         ></div>
-        <div className="w-48 h-28 bg-secondary rounded-lg"></div>
-        <div className="w-48 h-28 bg-secondary rounded-lg"></div>
-        <div className="w-48 h-28 bg-secondary rounded-lg"></div>
-        <div className="w-48 h-28 bg-secondary rounded-lg"></div>
+        <div
+          className="w-[20%] h-[15vh] rounded-lg"
+          style={{
+            backgroundImage: `url(${CryptLogo})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+          onClick={() => {
+            handleTransistion(1)
+            console.log(currentIndex)
+          }}
+        ></div>
+        <div
+          className="w-[20%] h-[15vh] bg-secondary rounded-lg"
+          onClick={() => {
+            handleTransistion(1)
+            console.log(currentIndex)
+          }}
+        ></div>
       </div>
     </section>
   )
