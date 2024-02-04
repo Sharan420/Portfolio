@@ -1,6 +1,6 @@
 //Imports:
 import './App.css'
-import { Intro, About, Skills, Work } from './Sections/'
+import { Intro, About, Skills, Work, WorkMob } from './Sections/'
 import { Navbar, Loader } from './Components'
 
 //Components:
@@ -21,6 +21,7 @@ function App() {
       <About />
       <Skills />
       <Work />
+      <WorkMob />
     </div>
   )
 }

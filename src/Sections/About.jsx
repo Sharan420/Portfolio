@@ -21,7 +21,7 @@ const About = () => {
             <h1 className="text-[3.5rem] text-[#ffff] font-inconsolata font-black tracking-tight">
               About Me
             </h1>
-            <p className="text-lg font-inconsolata font-normal text-slightoffwhite border-t-[3px] border-slightoffwhite pr-[10rem] py-2">
+            <p className="text-lg font-inconsolata font-normal text-slightoffwhite border-t-[3px] border-slightoffwhite md:pr-[10rem] py-2">
               Hey there! I&apos;m Sharan Suri, a versatile web developer,
               designer, and AI enthusiast. With a passion for creating seamless
               digital experiences, I blend technical expertise with a keen eye

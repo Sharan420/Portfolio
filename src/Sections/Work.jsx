@@ -1,12 +1,23 @@
+/* eslint-disable react/jsx-key */
 //Imports:
 import Traffix from '../Assets/Traffix1.png'
-import TraffixLogo from '../Assets/Traffix.jpg'
 import Crypt from '../Assets/crypt.png'
-import CryptLogo from '../Assets/cryptlogo.png'
-import { SiNumpy, SiKeras, SiPython } from 'react-icons/si'
+import TPA from '../Assets/TPA.png'
+import {
+  SiNumpy,
+  SiKeras,
+  SiPython,
+  SiPhp,
+  SiJavascript,
+  SiHtml5,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobepremierepro,
+} from 'react-icons/si'
 import { SlSocialGithub } from 'react-icons/sl'
 import { IoIosLink } from 'react-icons/io'
-import { useState } from 'react'
+import { FaLinkedin } from 'react-icons/fa'
+
 //Constants:
 const Projects = [
   {
@@ -30,9 +41,9 @@ const Projects = [
   },
   {
     name: 'Crypt@trix',
-    icon: [<SiKeras />, <SiNumpy />, <SiPython />],
+    icon: [<SiPhp />, <SiJavascript />, <SiHtml5 />],
     description:
-      'Keras is used to optimize traffic light timings by real-time traffic density detection, enhancing urban transportation efficiency and reducing congestion.',
+      'Crypt@trix is a web application to host crypthunts, a cryptic treasure hunt game, with a user-friendly interface and a secure backend.',
     links: [
       {
         name: 'Github',
@@ -42,101 +53,151 @@ const Projects = [
     ],
     Image: Crypt,
   },
+  {
+    name: 'Purpose Academy',
+    icon: [
+      <SiAdobephotoshop />,
+      <SiAdobeillustrator />,
+      <SiAdobepremierepro />,
+    ],
+    description:
+      'Purpose Academy offered a dynamic and collaborative learning environment that fueled my development as a purpose-driven leader.',
+    links: [
+      {
+        name: 'Github',
+        icon: <IoIosLink />,
+        link: 'https://thepurposeacademy.asia',
+      },
+      {
+        name: 'LinkedIn',
+        icon: <FaLinkedin />,
+        link: 'https://www.linkedin.com/company/the-purpose-academy-tpa/',
+      },
+    ],
+    Image: TPA,
+  },
 ]
 
 //Components:
 const Work = () => {
-  //State:
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [transition, setTransition] = useState(false)
-
-  //Functions:
-  const handleTransistion = index => {
-    setTransition(true)
-    setTimeout(() => {
-      setCurrentIndex(index)
-      setTransition(false)
-    }, 500)
-  }
-
   //Return:
   return (
     <section
-      className="relative flex flex-col min-h-[200px] px-[11vw] py-10 bg-background items-center justify-center"
+      className="hidden md:flex relative flex-col min-h-[200px] px-[11vw] py-10 bg-background items-center justify-center"
       id="work"
     >
       <h1 className="font-inconsolata text-[3.5rem] text-white font-bold pb-6">
         Projects
       </h1>
-      <div
-        className={
-          transition
-            ? 'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 opacity-0 transition-opacity duration-300'
-            : 'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 opacity-100 transition-opacity duration-300'
-        }
-      >
-        <img
-          src={Projects[currentIndex].Image}
-          className="rounded-lg aspect-auto w-[38vw] col-start-1 col-span-6 row-start-1"
-        />
-        <div className="col-start-6 col-span-4 z-20 text-white row-start-1 flex flex-col justify-center items-end w-full gap-2">
-          <h2 className="text-4xl font-inconsolata font-bold mr-2">
-            {Projects[currentIndex].name}
-          </h2>
-          <span className="flex flex-row gap-2 mr-2 opacity-50 w-full justify-end items-center">
-            <hr className="h-px w-full bg-gray-200 border-0 " />
-            {Projects[currentIndex].icon.map((item, index) => {
-              return <span key={index}>{item}</span>
-            })}
-          </span>
-          <div className="w-full pl-4 pr-8 py-4 bg-secondary rounded-sm">
-            <p className="text-end text-white font-inconsolata">
-              {Projects[currentIndex].description}
-            </p>
-          </div>
-          <div className="flex flex-row gap-2 mr-2 opacity-75 mt-4 text-2xl">
-            {Projects[currentIndex].links.map((item, index) => {
-              return (
-                <a href={item.link} key={index}>
-                  {item.icon}
-                </a>
-              )
-            })}
+      <div className="flex flex-col gap-10 justify-center items-center w-full">
+        {/* Traffix */}
+        <div
+          className={
+            'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 '
+          }
+        >
+          <img
+            src={Projects[0].Image}
+            className="rounded-lg aspect-auto w-[38vw] col-start-1 col-span-6 row-start-1"
+          />
+          <div className="col-start-6 col-span-4 z-20 text-white row-start-1 flex flex-col justify-center items-end w-full gap-2">
+            <h2 className="text-4xl font-inconsolata font-bold mr-2">
+              {Projects[0].name}
+            </h2>
+            <span className="flex flex-row gap-2 mr-2 opacity-50 w-full justify-end items-center">
+              <hr className="h-px w-full bg-gray-200 border-0 " />
+              {Projects[0].icon.map((item, index) => {
+                return <span key={index}>{item}</span>
+              })}
+            </span>
+            <div className="w-full pl-4 pr-8 py-4 bg-secondary rounded-sm">
+              <p className="text-end text-white font-inconsolata">
+                {Projects[0].description}
+              </p>
+            </div>
+            <div className="flex flex-row gap-2 mr-2 opacity-75 mt-4 text-2xl">
+              {Projects[0].links.map((item, index) => {
+                return (
+                  <a href={item.link} key={index}>
+                    {item.icon}
+                  </a>
+                )
+              })}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-row gap-8 min-h-[100px] w-full items-center justify-center mt-12">
+        {/* Crypt@trix */}
         <div
-          className={`w-[20%] h-[15vh] rounded-lg`}
-          style={{
-            backgroundImage: `url(${TraffixLogo})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-          onClick={() => {
-            handleTransistion(0)
-            console.log(currentIndex)
-          }}
-        ></div>
+          className={
+            'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 '
+          }
+        >
+          <img
+            src={Projects[1].Image}
+            className="rounded-lg aspect-auto w-[38vw] col-start-4 col-span-6 row-start-1"
+          />
+          <div className="col-start-1 col-span-4 z-20 text-white row-start-1 flex flex-col justify-center items-start w-full gap-2">
+            <h2 className="text-4xl font-inconsolata font-bold mr-2">
+              {Projects[1].name}
+            </h2>
+            <span className="flex flex-row gap-2 mr-2 opacity-50 w-full justify-start items-center">
+              {Projects[1].icon.map((item, index) => {
+                return <span key={index}>{item}</span>
+              })}
+              <hr className="h-px w-full bg-gray-200 border-0 " />
+            </span>
+            <div className="w-full pl-4 pr-8 py-4 bg-secondary rounded-sm">
+              <p className="text-end text-white font-inconsolata">
+                {Projects[1].description}
+              </p>
+            </div>
+            <div className="flex flex-row gap-2 mr-2 opacity-75 mt-4 text-2xl">
+              {Projects[1].links.map((item, index) => {
+                return (
+                  <a href={item.link} key={index}>
+                    {item.icon}
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+        {/* TPA */}
         <div
-          className="w-[20%] h-[15vh] rounded-lg"
-          style={{
-            backgroundImage: `url(${CryptLogo})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-          onClick={() => {
-            handleTransistion(1)
-            console.log(currentIndex)
-          }}
-        ></div>
-        <div
-          className="w-[20%] h-[15vh] bg-secondary rounded-lg"
-          onClick={() => {
-            handleTransistion(1)
-            console.log(currentIndex)
-          }}
-        ></div>
+          className={
+            'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 '
+          }
+        >
+          <img
+            src={Projects[2].Image}
+            className="rounded-lg aspect-auto w-[38vw] col-start-1 col-span-6 row-start-1"
+          />
+          <div className="col-start-6 col-span-4 z-20 text-white row-start-1 flex flex-col justify-center items-end w-full gap-2">
+            <h2 className="text-4xl font-inconsolata font-bold mr-2">
+              {Projects[2].name}
+            </h2>
+            <span className="flex flex-row gap-2 mr-2 opacity-50 w-full justify-end items-center">
+              <hr className="h-px w-full bg-gray-200 border-0 " />
+              {Projects[2].icon.map((item, index) => {
+                return <span key={index}>{item}</span>
+              })}
+            </span>
+            <div className="w-full pl-4 pr-8 py-4 bg-secondary rounded-sm">
+              <p className="text-end text-white font-inconsolata">
+                {Projects[2].description}
+              </p>
+            </div>
+            <div className="flex flex-row gap-2 mr-2 opacity-75 mt-4 text-2xl">
+              {Projects[2].links.map((item, index) => {
+                return (
+                  <a href={item.link} key={index}>
+                    {item.icon}
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

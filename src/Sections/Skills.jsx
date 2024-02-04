@@ -106,10 +106,10 @@ const Skills = () => {
         <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
           <span className="flex flex-col items-center text-slightoffwhite font-inconsolata w-1/5">
             <TbWorldWww className="text-[8rem]" />
-            <p className="text-lg">Web Development</p>
+            <p className="text-lg text-center">Web Development</p>
           </span>
           <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
-          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8 w-4/5">
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-x-14 gap-y-4 w-4/5">
             {WebDev.map((item, index) => {
               return (
                 <span
@@ -127,10 +127,10 @@ const Skills = () => {
         <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
           <span className="flex flex-col items-center text-slightoffwhite font-inconsolata w-1/5">
             <MdOutlineMonitor className="text-[8rem] leading-loose" />
-            <p className="text-lg">Design</p>
+            <p className="text-lg text-center">Design</p>
           </span>
           <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
-          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-8 w-4/5">
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-x-14 gap-y-4 w-4/5">
             {Design.map((item, index) => {
               return (
                 <span
@@ -148,10 +148,10 @@ const Skills = () => {
         <div className="mx-6 my-4 w-[74vw] h-full bg-secondary py-6 px-8 rounded-xl flex flex-col md:flex-row items-center justify-center gap-10">
           <span className="flex flex-col items-center text-slightoffwhite font-inconsolata w-1/5">
             <GiArtificialIntelligence className="text-[8rem] leading-loose" />
-            <p className="text-lg">Artificial Int</p>
+            <p className="text-lg text-center">Artificial Int</p>
           </span>
           <div className="w-[20vh] border-t-2 md:w-[2px] md:h-[30vh] md:border-l-2 border-slightoffwhite"></div>
-          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-10 w-4/5">
+          <div className="grid grid-cols-3 md:grid-cols-5 items-center justify-center gap-x-14 gap-y-4 w-4/5">
             {AI.map((item, index) => {
               return (
                 <span

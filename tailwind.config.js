@@ -14,6 +14,9 @@ export default {
         highlights: '#1AF877',
         slightoffwhite: '#C5D0C9',
       },
+      screens: {
+        md: '1000px',
+      },
     },
   },
   // eslint-disable-next-line no-undef
