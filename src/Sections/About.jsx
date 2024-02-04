@@ -1,85 +1,72 @@
+//Imports:
+import { SocialIcon } from 'react-social-icons'
 import myImage from '../Assets/myImage.jpeg'
-import {
-  FaInstagram,
-  FaGithub,
-  FaTwitter,
-  FaLinkedin,
-  FaDiscord,
-  FaSpotify,
-} from 'react-icons/fa'
-import { IoIosMail } from 'react-icons/io'
 
+//Components:
 const About = () => {
+  //Return:
   return (
-    <section className="h-[70vh] w-full bg-[#174305]" id="about">
-      <div
-        className="m-0 p-0 relative grid grid-cols-2 content-center justify-items-center h-full w-inherit "
-        alt="parent"
+    <>
+      <section
+        id="about"
+        className="-my-px md:my-0 relative z-10 py-10 bg-secondary min-h-96"
       >
-        <img
-          src={myImage}
-          alt="Sharan Suri"
-          className="relative w-3/5 top-px rounded-2xl cols-span-1 aspect-square ml-[10rem]"
-        />
-        <div
-          className="flex flex-col justify-start w-full cols-span-1 pr-[10rem] pt-20"
-          alt="child"
-        >
-          <p className="text-[1rem] font-inconsolata font-normal text-white">
-            <span className="font-bold text-[3rem] text-[#f0ed66] underline underline-offset-4 font-climate tracking-widest">
-              Hey there, I'm Sharan Suri
-            </span>
-            <br />
-            <br />A BTech student and passionate web developer. My project
-            portfolio includes impactful solutions like the Traffic Regulator
-            and Water Purity Finder. Proficient in Python, JavaScript, and
-            MySQL, I thrive on crafting dynamic and efficient web applications.
-            Let's innovate together!
-          </p>
-          <div className="pt-9 flex flex-row gap-10">
-            <a
-              href="https://www.linkedin.com/in/sharan-suri-9064aa167/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin className="text-[#f0ed66] text-[2.5rem]" />
-            </a>
-            <a
-              href="https://www.instagram.com/share.sus/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram className="text-[#f0ed66] text-[2.5rem]" />
-            </a>
-            <a
-              href="https://github.com/Sharan420"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub className="text-[#f0ed66] text-[2.5rem]" />
-            </a>
-            <a
-              href="https://www.discordapp.com/users/400577870705197066"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaDiscord className="text-[#f0ed66] text-[2.5rem]" />
-            </a>
-            <a
-              href="https://twitter.com/Sharan_devel"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaTwitter className="text-[#f0ed66] text-[2.5rem]" />
-            </a>
-            <a href="mailto:devel.sharan.2003@gmail.com">
-              <IoIosMail className="text-[#f0ed66] text-[2.5rem]" />
-            </a>
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-2 md:gap-10 ">
+          <img
+            src="http://placekitten.com/300/300"
+            alt="myImage"
+            className="rounded-xl w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
+          />
+          <div className="md:flex md:flex-col w-[80%] md:w-[50%] pt-3 md:pt-6">
+            <h1 className="text-[3.5rem] text-[#ffff] font-inconsolata font-black tracking-tight">
+              About Me
+            </h1>
+            <p className="text-lg font-inconsolata font-normal text-slightoffwhite border-t-[3px] border-slightoffwhite md:pr-[10rem] py-2">
+              Hey there! I&apos;m Sharan Suri, a versatile web developer,
+              designer, and AI enthusiast. With a passion for creating seamless
+              digital experiences, I blend technical expertise with a keen eye
+              for design. Over the years, I&apos;ve honed my skills in HTML,
+              CSS, JavaScript, and AI technologies, crafting innovative
+              solutions that marry form and function.
+            </p>
+            <div className="grid grid-cols-3 gap-4 md:flex md:flex-row md:gap-4 pt-6 justify-items-center">
+              <SocialIcon
+                url="https://x.com/Sharan_devel"
+                bgColor="#C5D0C9"
+                fgColor="transparent"
+              />
+              <SocialIcon
+                url="https://www.instagram.com/share.sus/"
+                bgColor="#C5D0C9"
+                fgColor="transparent"
+              />
+              <SocialIcon
+                url="https://www.linkedin.com/in/sharan-suri-9064aa167/"
+                bgColor="#C5D0C9"
+                fgColor="transparent"
+              />
+              <SocialIcon
+                url="https://github.com/Sharan420"
+                bgColor="#C5D0C9"
+                fgColor="transparent"
+              />
+              <SocialIcon
+                url="https://www.discord.com/users/400577870705197066"
+                bgColor="#C5D0C9"
+                fgColor="transparent"
+              />
+              <SocialIcon
+                url="mailto:devel.sharan.2003@gmail.com"
+                bgColor="#C5D0C9"
+                fgColor="transparent"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 
+//Exports:
 export default About
