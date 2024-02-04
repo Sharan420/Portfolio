@@ -30,7 +30,8 @@ const Navbar = () => {
       <div className="hidden md:block md:space-x-8 md:font-inconsolata md:text-white md:text-2xl">
         <a href="#about">01.About</a>
         <a href="#skills">02.Skills</a>
-        <a href="#">03.Contact</a>
+        <a href="#work">03.Work</a>
+        <a href="#">04.Contact</a>
       </div>
       <a className="md:hidden mt-4">
         <TiThMenu className="text-4xl text-white" />

@@ -98,8 +98,8 @@ const Skills = () => {
           ></path>
         </svg>
       </div>
-      <div className="flex flex-col justify-center items-center h-full w-full py-20">
-        <h1 className="text-[4rem] text-[#ffff] font-inconsolata font-black tracking-tight">
+      <div className="flex flex-col justify-center items-center h-full w-full pt-20">
+        <h1 className="text-[3.5rem] text-[#ffff] font-inconsolata font-black tracking-tight">
           Skills
         </h1>
         {/* WebDev */}
