@@ -1,6 +1,6 @@
 //Imports:
 import './App.css'
-import { Intro, About, Skills, Work, WorkMob } from './Sections/'
+import { Intro, About, Skills, Work, WorkMob, Contact } from './Sections/'
 import { Navbar, Loader } from './Components'
 
 //Components:
@@ -10,9 +10,7 @@ function App() {
     <div
       // eslint-disable-next-line no-constant-condition
       className={
-        true
-          ? 'absolute h-full w-full scrollbar-thin scrollbar-thumb-primary scrollbar-track-secondary overflow-y-scroll'
-          : 'absolute h-full overflow-hidden'
+        'absolute h-full w-full scrollbar-thin scrollbar-thumb-primary scrollbar-track-secondary overflow-y-scroll'
       }
     >
       <Navbar />
@@ -22,6 +20,7 @@ function App() {
       <Skills />
       <Work />
       <WorkMob />
+      <Contact />
     </div>
   )
 }

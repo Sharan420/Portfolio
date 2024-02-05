@@ -1,6 +1,6 @@
 //Imports:
 import { SocialIcon } from 'react-social-icons'
-import myImage from '../Assets/myImage.jpeg'
+import myImage from '../Assets/ME.png'
 
 //Components:
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
       >
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-2 md:gap-10 ">
           <img
-            src="http://placekitten.com/300/300"
+            src={myImage}
             alt="myImage"
             className="rounded-xl w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
           />
