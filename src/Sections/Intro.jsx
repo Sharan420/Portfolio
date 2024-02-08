@@ -61,9 +61,11 @@ const Intro = () => {
             Engineer with a passion for deconstruction, web experience curation,
             and occasional design involvement.
           </p>
-          <button className="px-10 py-2 rounded-2xl border-2 border-orange-50 bg-[#66BF40]/[0.15] text-white text-2xl font-inconsolata mt-8 transition duration-200 hover:bg-[#66BF40]/[0.35]">
-            Resume
-          </button>
+          <a href="https://docs.google.com/document/d/10RlsaCpElISN6d7gOOukG1Lk-Lld75PQERIn4MjxKFk/edit?usp=sharing">
+            <button className="px-10 py-2 rounded-2xl border-2 border-orange-50 bg-[#66BF40]/[0.15] text-white text-2xl font-inconsolata mt-8 transition duration-200 hover:bg-[#66BF40]/[0.35]">
+              Resume
+            </button>
+          </a>
         </div>
         <div
           className={
