@@ -3,7 +3,7 @@ import { IoMdMail } from 'react-icons/io'
 const Contact = () => {
   return (
     <section
-      className="flex flex-col min-h-[200px] px-[10vw] md:px-[25vw] pb-10 bg-secondary items-center justify-center w-full gap-2 md:gap-4"
+      className="flex flex-col -mt-px min-h-[200px] px-[10vw] md:px-[25vw] pb-10 bg-secondary items-center justify-center w-full gap-2 md:gap-4"
       id="contact"
     >
       <h2 className="font-inconsolata text-3xl md:text-[3.2rem] text-white font-bold">
