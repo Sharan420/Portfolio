@@ -50,7 +50,7 @@ const Navbar = () => {
           className={
             navStatus
               ? 'z-20 absolute top-0 right-0 h-screen w-full bg-background flex flex-col items-center justify-center text-white font-inconsolata text-3xl gap-8 transition-all duration-500 ease-in-out'
-              : 'z-20 absolute top-0 right-0 h-screen w-full bg-background flex flex-col items-center justify-center text-white font-inconsolata text-3xl gap-8 -translate-x-[100rem] transition-all duration-300 ease-in-out'
+              : 'z-20 absolute top-0 right-0 h-screen w-full bg-background flex flex-col items-center justify-center text-white font-inconsolata text-3xl gap-8 -translate-x-[100vw] transition-all duration-300 ease-in-out'
           }
         >
           <a href="#about" onClick={() => setNavStatus(false)}>
