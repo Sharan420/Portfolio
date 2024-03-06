@@ -15,6 +15,7 @@ import {
   SiPytorch,
   SiNumpy,
   SiKeras,
+  SiTypescript,
 } from 'react-icons/si'
 import { MdOutlineMonitor } from 'react-icons/md'
 import { GiArtificialIntelligence } from 'react-icons/gi'
@@ -38,8 +39,12 @@ const WebDev = [
   { name: 'Django', icon: <DiDjango className="text-[4rem] md:text-[6rem]" /> },
   { name: 'Vite', icon: <SiVite className="text-[4rem] md:text-[6rem]" /> },
   {
-    name: 'Tailwind Css',
+    name: 'Tailwind',
     icon: <SiTailwindcss className="text-[4rem] md:text-[6rem]" />,
+  },
+  {
+    name: 'Typescript',
+    icon: <SiTypescript className="text-[4rem] md:text-[6rem]" />,
   },
 ]
 
@@ -117,7 +122,7 @@ const Skills = () => {
                   key={index}
                 >
                   {item.icon}
-                  <p className="text-md md:text-lg">{item.name}</p>
+                  <p className="text-md md:text-lg text-center">{item.name}</p>
                 </span>
               )
             })}
