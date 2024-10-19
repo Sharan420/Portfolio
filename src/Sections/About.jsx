@@ -1,6 +1,6 @@
 //Imports:
 import { SocialIcon } from 'react-social-icons'
-import myImage from '../Assets/ME.png'
+import myImage from '../Assets/ME.jpg'
 
 //Components:
 const About = () => {
