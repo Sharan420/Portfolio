@@ -1,15 +1,15 @@
 /* eslint-disable react/jsx-key */
 //Imports:
 import Traffix from '../Assets/Traffix1.png'
-import Crypt from '../Assets/crypt.png'
+import Siggy from '../Assets/siggy_meta.png'
 import TPA from '../Assets/TPA.png'
 import {
   SiNumpy,
   SiKeras,
+  SiFlask,
+  SiReact,
+  SiSelenium,
   SiPython,
-  SiPhp,
-  SiJavascript,
-  SiHtml5,
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiAdobepremierepro,
@@ -19,7 +19,26 @@ import { IoIosLink } from 'react-icons/io'
 import { FaLinkedin } from 'react-icons/fa'
 
 //Constants:
-const Projects = [
+export const Projects = [
+  {
+    name: 'Siggy',
+    icon: [<SiFlask />, <SiSelenium />, <SiPython />, <SiReact />],
+    description:
+      'Siggy is a web scraping tool built with Selenium that extracts menu items from Swiggy and recommends food options tailored to your budget, making dining decisions effortless.',
+    links: [
+      {
+        name: 'Website',
+        icon: <IoIosLink />,
+        link: 'https://siggy.fun',
+      },
+      {
+        name: 'Github (Frontend)',
+        icon: <SlSocialGithub />,
+        link: 'https://github.com/Sharan420/siggy-frontend',
+      },
+    ],
+    Image: Siggy,
+  },
   {
     name: 'Traffix',
     icon: [<SiKeras />, <SiNumpy />, <SiPython />],
@@ -38,20 +57,6 @@ const Projects = [
       },
     ],
     Image: Traffix,
-  },
-  {
-    name: 'Crypt@trix',
-    icon: [<SiPhp />, <SiJavascript />, <SiHtml5 />],
-    description:
-      'Crypt@trix is a web application to host crypthunts, a cryptic treasure hunt game, with a user-friendly interface and a secure backend.',
-    links: [
-      {
-        name: 'Github',
-        icon: <SlSocialGithub />,
-        link: 'https://github.com/PyrotechClub/crypt22',
-      },
-    ],
-    Image: Crypt,
   },
   {
     name: 'Purpose Academy',
@@ -90,7 +95,7 @@ const Work = () => {
         Projects
       </h1>
       <div className="flex flex-col gap-10 justify-center items-center w-full">
-        {/* Traffix */}
+        {/* Siggy */}
         <div
           className={
             'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 '
@@ -126,7 +131,7 @@ const Work = () => {
             </div>
           </div>
         </div>
-        {/* Crypt@trix */}
+        {/* Traffix */}
         <div
           className={
             'relative grid grid-cols-9 min-h-[200px] w-3/4 justify-start gap-3 '
@@ -199,7 +204,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div className={'custom-shape-divider-bottom-1706648784 mt-10'}>
+      <div className={'custom-shape-divider-bottom-1706648784 mt-10 mb-[-4px]'}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

@@ -2,6 +2,7 @@
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import { useEffect, useState } from 'react'
 import { useVideoContext } from '../Contexts/VideoContext'
+import { FaFileAlt } from 'react-icons/fa'
 
 //Components:
 const Intro = () => {
@@ -62,7 +63,8 @@ const Intro = () => {
             and occasional design involvement.
           </p>
           <a href="https://docs.google.com/document/d/10RlsaCpElISN6d7gOOukG1Lk-Lld75PQERIn4MjxKFk/edit?usp=sharing">
-            <button className="px-10 py-2 rounded-2xl border-2 border-orange-50 bg-[#66BF40]/[0.15] text-white text-2xl font-inconsolata mt-8 transition duration-200 hover:bg-[#66BF40]/[0.35]">
+            <button className="px-10 py-2 rounded-2xl border-2 border-orange-50 bg-[#66BF40]/[0.15] text-white text-2xl font-inconsolata mt-8 transition duration-200 hover:bg-[#66BF40]/[0.35] flex flex-row items-center gap-2">
+              <FaFileAlt />
               Resume
             </button>
           </a>
